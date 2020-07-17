@@ -1,2 +1,2 @@
 # Match
-UI and UX guidelines for developers
+UI and UX check-list guidelines for developers
