@@ -1,6 +1,54 @@
 @import "./components";
 @import "./utilities";
 
+.pop-up {
+  height: 100vh;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .pop-up-wrapper {
+    width: 500px;
+    background-color: $gray;
+    padding: 1em 1.5em;
+    position: relative;
+    .close {
+      text-align: right;
+      position: absolute ;
+      top: 5px;
+      right: 5px;
+      button {
+        color: $white;
+        background-color: inherit;
+        font-size: 1.2rem;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+          border: 1px solid $black;
+        }
+      }
+    }
+    
+    h2 {
+      text-align: center;
+      font-weight: 100;
+      color: $teal;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+
+      margin: 2em 0;
+    }
+  }
+}
+
 header {
   text-align: center;
   background-color: $dark-gray;
@@ -320,6 +368,143 @@ header {
         color: $gray-text;
         font-size: 90%;
       }
+    }
+  }
+}
+
+.Layout{
+  .right .top {
+    width: 500px;
+    height: 340px;
+    background-color: darken($color: $dark-gray, $amount: 1);
+    
+    .UI-and-UX-wrapper {
+      h1 {
+        text-align: center;
+        font-family: $primary-font;
+        font-size: 200%;
+        font-weight: 300;
+        padding-top: .5em;
+        margin-bottom: .5em;
+        color: $teal;
+      }
+
+
+      .layout-principles {
+        p {
+          font-size: 120%;
+          color: $gray-text;
+          text-align: center;
+          margin-bottom: 1em;
+          font-family: $primary-font;
+        }
+
+      }
+
+      .check-list {
+        max-width: 75%;
+        margin: 0 auto;
+        li {
+          padding: 2px 5px;
+          font-size: 115%;
+          text-align: left;
+        }
+      }
+      h3 {
+        text-align: center;
+        color: gray; 
+        padding-top: 1em;
+        font-weight: 100;
+        font-size: 100%;
+
+        a {
+          color: $teal;
+          &:hover {
+            color: lighten($color: $teal, $amount: 10);
+          }
+        }
+      }
+    }
+  }
+  .right .bottom {
+    width: 500px;
+    height: 260px;
+    background: $gray;
+    
+    .Credentials-wrapper {
+      padding: 3%;
+      text-align: center;
+      font-family: $primary-font;
+      color: lighten($color: $black, $amount: 40);
+
+      a {
+        color: $teal;
+
+        &:hover {
+          color: lighten($color: $teal, $amount: 10);
+        }
+      }
+      
+      h1 {
+        margin-bottom: 2%;
+        font-weight: 350;
+        
+
+        span {
+          color: red;
+        }
+      }
+      
+      p {
+        padding: 5px;
+        font-size: 105%;
+      }
+
+      h2 {
+        font-weight: 100;
+        font-size: 125%;
+      }
+    }
+  }
+}
+
+footer {
+  height: 130px;
+  background-color: $dark-gray;
+  color: $gray-text;
+  padding: 1em;
+
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+    }
+    li {
+      font-size: 130%;
+      margin-right: .5em;
+
+      &:last-of-type{
+        margin-right: 0;
+      }
+      
+      &:hover {
+        color: $teal;
+      }
+    }
+    
+  }
+  p {
+    text-align: center;
+    padding: .5em;
+
+    span {
+      font-family: $primary-font;
+      font-size: 120% ;
+      color: $teal;
+      padding-right: 2px;
+      border-right: 1px solid $teal;
     }
   }
 }
